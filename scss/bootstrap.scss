@@ -1,0 +1,76 @@
+/******* Customized Bootstrap ********/
+
+$primary: #D4AF37; // Gold
+$light: #F5F5DC; // Beige
+$dark: #000080; // Navy
+$danger: #DC143C; // Crimson Red (or adjust to a softer red if needed)
+
+$font-family-base: 'Heebo', sans-serif;
+
+$headings-font-family: 'Nunito', sans-serif;
+
+$body-color: #52565b;
+
+$headings-color: $dark;
+
+$headings-font-weight: 700;
+
+$display-font-weight: 800;
+
+$enable-responsive-font-sizes: true;
+
+$border-radius: 0px;
+
+$link-decoration: none;
+
+$enable-negative-margins: true;
+
+@import "bootstrap/scss/bootstrap";
+
+// Optional: Adjust other Bootstrap variables for better color integration
+// Example:
+
+a {
+  color: $primary; // Gold links
+  &:hover {
+    color: darken($primary, 10%);
+  }
+}
+
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+  &:hover {
+    background-color: darken($primary, 10%);
+    border-color: darken($primary, 10%);
+  }
+}
+
+.bg-light{
+    background-color:$light !important;
+}
+
+.text-primary{
+    color: $primary !important;
+}
+
+.bg-dark{
+    background-color: $dark !important;
+}
+
+.text-dark{
+    color:$dark !important;
+}
+
+.text-danger{
+    color: $danger !important;
+}
+
+.btn-danger{
+    background-color: $danger;
+    border-color: $danger;
+    &:hover{
+        background-color: darken($danger, 10%);
+        border-color: darken($danger, 10%);
+    }
+}
